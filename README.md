@@ -1,32 +1,85 @@
-# Machine Learning
+# Machine Learning Portfolio
 
-## Current Topics Covered
+## Overview
+This repository contains machine learning projects focusing on classification algorithms and data preprocessing techniques. Each project demonstrates end-to-end ML workflows from data cleaning to model evaluation.
 
-### 1. Feature Encoding
-Understanding when to use different encoding methods for categorical variables.
+## Current Projects
 
-**Label Encoding** - Best for Ordinal categorical variables where data follows a logical order:
-- Satisfaction rating: dislike, neutral, like
-- Sizing: small, medium, large
+### 1. Titanic Survival Prediction
+**Algorithm:** Logistic Regression  
+**Dataset:** Kaggle Titanic Competition  
+**Goal:** Predict passenger survival based on characteristics
 
-**One-Hot Encoding** - Best for Nominal categorical variables where data does not follow a logical order:
-- Gender: female, male
-- Colors: red, blue, green
+**Key Features:**
+- Data preprocessing (handling missing values, encoding categorical variables)
+- Feature engineering with one-hot encoding
+- Model training and evaluation
+- Confusion matrix analysis
 
-### 2. Logistic Regression
-Classification algorithm for predicting categories (despite having "regression" in the name).
-Logistics Regression is a commonly used regression model for binary classification. 
+### 2. E-Commerce Shipping Prediction
+**Algorithm:** Logistic Regression  
+**Dataset:** Customer Analytics (Kaggle)  
+**Goal:** Predict if shipments will reach on time
 
-Logistics regression is used by estimating a probability given a threshold between 0 and 1. 
+**Results:**
+- Model Accuracy: 65.36%
+- Confusion Matrix: [[533, 362], [400, 905]]
+- Better at predicting on-time deliveries vs. late shipments
 
-**Key Point:** Logistic regression is NOT a regression algorithm - it's a classification algorithm.
+**Key Insights:**
+- 905 correct on-time predictions vs. 533 correct late predictions
+- 362 false positives (predicted on-time but actually late) - critical for customer satisfaction
 
-**Current Exercise:** Titanic survival prediction using passenger characteristics.
+## Key Concepts Covered
 
-## Files
-- `ExerciseLogisticRegression.ipynb` - Hands-on Titanic dataset exercise
-- `Encoding Features` - Notes on when to use label vs one-hot encoding
-- `titanic/` - Dataset folder with train.csv, test.csv, and sample submission
+### Feature Encoding Techniques
+**Label Encoding** - For ordinal categorical variables:
+- Product importance: low → medium → high
+- Maintains natural ordering
 
-## Next Steps
-This project will expand to cover additional machine learning algorithms and techniques.
+**One-Hot Encoding** - For nominal categorical variables:
+- Gender, warehouse location, shipping mode
+- Avoids false ordering assumptions
+
+### Data Preprocessing
+- Missing value imputation
+- Feature scaling with StandardScaler
+- Handling categorical variables
+
+### Model Evaluation
+- Accuracy metrics
+- Confusion matrix interpretation
+- Understanding True/False Positives and Negatives
+- Business impact analysis
+
+## Technologies Used
+- **Python Libraries:** pandas, numpy, matplotlib, seaborn, scikit-learn
+- **Algorithms:** Logistic Regression
+- **Tools:** Jupyter Notebooks, StandardScaler, LabelEncoder
+
+## Key Learnings
+- **Logistic Regression is classification, not regression** despite the name
+- **Logistic Regression is a commonly used classification algorithm for binary classification** that predicts categories rather than continuous values
+- **Logistic regression works by estimating probabilities** between 0 and 1, then applying a threshold (typically 0.5) to make binary predictions
+- StandardScaler is crucial for distance-based algorithms
+- Feature encoding choice depends on variable type (ordinal vs nominal)
+- Confusion matrix provides deeper insights than accuracy alone
+- Business context matters when interpreting model errors
+
+## Future Work
+This portfolio will expand to include:
+- Additional classification algorithms (Random Forest, SVM)
+- Regression algorithms
+- Clustering techniques
+- Deep learning applications
+- Advanced feature engineering methods
+
+## Files Structure
+```
+├── ExerciseLogisticRegression.ipynb    # Titanic survival prediction
+├── E_CommerceLogisticsRegression.ipynb # Shipping time prediction  
+└── README.md                          # This file
+```
+
+---
+*This repository demonstrates practical machine learning applications with real-world datasets and business implications.*
