@@ -15,6 +15,9 @@ Understanding when to use different encoding methods for categorical variables.
 
 ### 2. Logistic Regression
 Classification algorithm for predicting categories (despite having "regression" in the name).
+Logistics Regression is a commonly used regression model for binary classification. 
+
+Logistics regression is used by estimating a probability given a threshold between 0 and 1. 
 
 **Key Point:** Logistic regression is NOT a regression algorithm - it's a classification algorithm.
 
