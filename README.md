@@ -3,7 +3,11 @@
 ## Overview
 This repository contains machine learning projects focusing on classification algorithms and data preprocessing techniques. Each project demonstrates end-to-end ML workflows from data cleaning to model evaluation.
 
+<<<<<<< HEAD
 ## Logistics Regression  
+=======
+## Current Projects
+>>>>>>> original/main
 
 ### 1. Titanic Survival Prediction
 **Algorithm:** Logistic Regression  
@@ -30,6 +34,7 @@ This repository contains machine learning projects focusing on classification al
 - 905 correct on-time predictions vs. 533 correct late predictions
 - 362 false positives (predicted on-time but actually late) - critical for customer satisfaction
 
+<<<<<<< HEAD
 ## Natural language Processing 
 
 
@@ -43,6 +48,8 @@ This repository contains machine learning projects focusing on classification al
 
 
 
+=======
+>>>>>>> original/main
 ## Key Concepts Covered
 
 ### Feature Encoding Techniques

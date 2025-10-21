@@ -1,0 +1,9 @@
+When to use label Encoder or One-hot-encoder. 
+
+Label endoding is best used for Ordinal categorical variables where data follows a logical order. For example: Satisfaction rating dislike, neutral, and like. Sizing like small, medium, large. 
+
+One hot encoding  is best used for nominal categorical variables where its data does not  follow a logical order. For example we would be able to encode gender where female would be 0 and male would be 1. Being able to encode gender is beneficial because we would able to compare the two separate values in our dataset. 
+
+
+
+

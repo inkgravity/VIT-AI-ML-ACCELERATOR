@@ -1,0 +1,3 @@
+Logistics Regression is a commonly used regression model for binary classification. 
+
+Logistics regression is used by estimating a probability given a threshold between 0 and 1. 
